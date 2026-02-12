@@ -1,24 +1,22 @@
-# AWS Gemini Bot CI/CD Pipeline
+# Gemini CI/CD AWS Pipeline
 
-### Secure and Scalable DevOps Implementation using GitHub, Jenkins, Docker, and AWS
+### Automated DevOps Deployment using GitHub, Jenkins, Docker, and AWS
 
 ## 📌 Project Overview
 
-This project demonstrates a **secure, automated, and scalable Continuous Integration and Continuous Deployment (CI/CD) pipeline** for a Gemini Bot Clone web application.
-
-The system integrates **GitHub, Jenkins, Docker, and Amazon Web Services (AWS)** to automate the entire workflow — from code architecture to production deployment — ensuring faster releases, reduced manual effort, and high deployment reliability.
+This project demonstrates a **secure, scalable, and fully automated CI/CD pipeline** for a Gemini Bot Clone web application. The pipeline integrates **GitHub, Jenkins, Docker, and AWS** to automate the entire deployment lifecycle, enabling fast, reliable, and production-ready deployments with minimal manual intervention.
 
 ---
 
 ## 🚀 Key Features
 
-* GitHub webhook-triggered automated Jenkins pipeline
-* Docker-based containerized application deployment
-* AWS EC2 infrastructure hosting the application
-* Artifact storage and build log backup using AWS S3
+* GitHub webhook-triggered Jenkins CI/CD pipeline
+* Docker containerized application deployment
+* AWS EC2 hosting for production deployment
+* Artifact and build log storage using AWS S3
 * Automated container lifecycle management and cleanup
-* Secure infrastructure using IAM roles and AWS security groups
-* Production-ready DevOps automation workflow
+* Secure infrastructure using IAM roles and security groups
+* Production-ready DevOps workflow
 
 ---
 
@@ -27,10 +25,10 @@ The system integrates **GitHub, Jenkins, Docker, and Amazon Web Services (AWS)**
 Pipeline Flow:
 
 GitHub Repository
-→ Jenkins CI/CD Pipeline
+→ Jenkins Pipeline
 → Docker Image Build
-→ AWS EC2 Container Deployment
-→ Artifact & Log Storage in AWS S3
+→ AWS EC2 Deployment
+→ Artifact Storage in AWS S3
 
 ---
 
@@ -48,7 +46,7 @@ GitHub Repository
 ## 📁 Repository Structure
 
 ```
-aws-gemini-bot-cicd-pipeline/
+gemini-cicd-aws/
 │── index.html
 │── style.css
 │── script.js
@@ -64,8 +62,8 @@ aws-gemini-bot-cicd-pipeline/
 
 ## ⚙️ Automated Deployment Workflow
 
-1. Developer pushes code to GitHub repository.
-2. GitHub webhook triggers Jenkins pipeline automatically.
+1. Developer pushes code to GitHub.
+2. GitHub webhook automatically triggers Jenkins pipeline.
 3. Jenkins builds Docker image and deploys container to AWS EC2.
 4. Build artifacts and logs are uploaded to AWS S3.
 5. Old containers and images are automatically cleaned.
@@ -77,13 +75,13 @@ Average deployment time: **~2–3 minutes**
 ## 📦 Run Locally
 
 ```bash
-git clone https://github.com/Thirumalaivasangj3/aws-gemini-bot-cicd-pipeline.git
-cd aws-gemini-bot-cicd-pipeline
+git clone https://github.com/Thirumalaivasangj3/gemini-cicd-aws.git
+cd gemini-cicd-aws
 docker build -t gemini-bot .
 docker run -p 8081:80 gemini-bot
 ```
 
-Open in browser:
+Open:
 
 ```
 http://localhost:8081
@@ -94,28 +92,28 @@ http://localhost:8081
 ## 🔐 Security Measures
 
 * IAM role-based secure AWS access
-* Encrypted AWS S3 artifact storage
-* Jenkins credentials stored securely in credential vault
-* Restricted EC2 access using security groups
+* Encrypted S3 artifact storage
+* Jenkins credential vault for secrets management
+* Controlled EC2 access using security groups
 
 ---
 
 ## 📈 Project Outcomes
 
-* Reduced deployment time from 30–45 minutes to ~2 minutes
+* Deployment time reduced from 30–45 minutes to ~2 minutes
 * Eliminated manual deployment steps
-* Improved scalability, automation, and deployment reliability
-* Demonstrates enterprise-level DevOps CI/CD implementation
+* Improved scalability and deployment reliability
+* Demonstrates enterprise-level DevOps automation practices
 
 ---
 
 ## 🔮 Future Enhancements
 
-* Multi-environment deployment (Dev / Staging / Production)
+* Multi-environment deployments (Dev / Staging / Production)
 * Kubernetes (AWS EKS) integration
-* Monitoring with Prometheus and Grafana
+* Monitoring using Prometheus and Grafana
 * Infrastructure provisioning using Terraform
-* Automated security vulnerability scanning
+* Automated vulnerability scanning
 
 ---
 
