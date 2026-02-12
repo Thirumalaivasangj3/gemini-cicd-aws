@@ -1,89 +1,71 @@
-# Gemini Bot Clone
+# GJ AI Chatbot
 
-This is a simple clone of the Gemini bot, built with **HTML, CSS, and JavaScript**. The project replicates the bot UI and provides a **Dockerized environment** for easy deployment.
+A modern AI chatbot interface inspired by Gemini UI, built using **HTML, CSS, JavaScript**, and containerized using **Docker** for easy deployment.
 
 ---
 
 ## 🚀 Features
 
-- Responsive bot UI
-- Smooth animations & interactive design
-- **Docker support** for containerized deployment
-- Lightweight and fast
-- Easy to set up and extend
+* Modern responsive chatbot UI
+* Smooth animations and interactive chat experience
+* Dark / Light theme toggle
+* Docker-ready deployment
+* Lightweight frontend architecture
 
 ---
 
-## 📁 File Structure
+## 📁 Project Structure
+
 ```
-gemini-bot-clone/
-│── .dockerignore    # Ignore unnecessary files in Docker
-│── Dockerfile       # Docker container setup
-│── index.html       # Main HTML structure
-│── script.js        # JavaScript for bot interactions
-│── style.css        # Styling for the bot
-│── download.png     # UI assets
-│── download1.png    # UI assets
-│── downloads.png    # UI assets
-│── README.md        # Project documentation
+GJ-AI-Chatbot/
+│── index.html
+│── style.css
+│── script.js
+│── Dockerfile
+│── Jenkinsfile
+│── README.md
+│── LICENSE
+│── assets/
 ```
 
 ---
 
-## 🛠 Installation & Setup
+## 🛠 Installation
 
-### **1️⃣ Clone the Repository**
-First, clone this repository using Git:
+### Clone Repository
+
 ```bash
-git clone https://github.com/yourusername/gemini-bot-clone.git
-cd gemini-bot-clone
+git clone https://github.com/yourusername/GJ-AI-Chatbot.git
+cd GJ-AI-Chatbot
 ```
 
-### **2️⃣ Open Locally (Without Docker)**
-If you want to test it without Docker, just open the `index.html` file in your browser:
-- Open `index.html` in your browser.
+### Run Locally
 
-### 📦 Running the Project with Docker
+Open **index.html** in your browser.
 
-#### **1️⃣ Build the Docker Image**
-Run the following command in the terminal:
+---
+
+## 📦 Run using Docker
+
 ```bash
-docker build -t gemini-bot .
+docker build -t gj-ai-chatbot .
+docker run -p 8080:80 gj-ai-chatbot
 ```
 
-#### **2️⃣ Run the Container**
-```bash
-docker run -p 8080:80 gemini-bot
-```
-Then, open [http://localhost:8080](http://localhost:8080) in your browser.
+Open:
+http://localhost:8080
 
 ---
 
-## 🛠 Technologies Used
+## 🔮 Future Enhancements
 
-- **HTML5** – Structure
-- **CSS3** – Styling & animations
-- **JavaScript (ES6)** – Bot interactivity
-- **Docker** – Containerized deployment
-
----
-
-## 🎯 Future Improvements
-
-- Add real-time AI responses
-- Implement backend integration
-- Improve UI/UX with better animations
-- Add speech-to-text functionality
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-Feel free to fork this repository, make changes, and submit a pull request.
+* Backend AI integration
+* Voice input support
+* Chat history database
+* Branding customization
 
 ---
 
 ## 📜 License
 
-This project is for educational purposes only and is not affiliated with Google Gemini.
+MIT License
