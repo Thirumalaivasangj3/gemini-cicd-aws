@@ -1,42 +1,46 @@
-# Secure and Scalable CI/CD Pipeline for Gemini Bot Clone
+# AWS Gemini Bot CI/CD Pipeline
 
-### Automated DevOps Implementation using GitHub, Jenkins, Docker, and AWS
+### Secure and Scalable DevOps Implementation using GitHub, Jenkins, Docker, and AWS
 
 ## 📌 Project Overview
 
-This project demonstrates a **secure and scalable Continuous Integration and Continuous Deployment (CI/CD) pipeline** for the **Gemini Bot Clone**, a web-based chatbot interface built using HTML, CSS, and JavaScript.
+This project demonstrates a **secure, automated, and scalable Continuous Integration and Continuous Deployment (CI/CD) pipeline** for a Gemini Bot Clone web application.
 
-The pipeline automates the complete deployment workflow using **GitHub, Jenkins, Docker, and Amazon Web Services (AWS)**, ensuring fast, reliable, and production-ready deployments with minimal manual intervention.
+The system integrates **GitHub, Jenkins, Docker, and Amazon Web Services (AWS)** to automate the entire workflow — from code architecture to production deployment — ensuring faster releases, reduced manual effort, and high deployment reliability.
 
 ---
 
 ## 🚀 Key Features
 
-* Fully automated CI/CD pipeline triggered by GitHub commits
-* Docker-based containerized deployment
-* Jenkins pipeline automation for build and deployment
-* AWS EC2 hosting for application deployment
-* AWS S3 artifact storage and log management
+* GitHub webhook-triggered automated Jenkins pipeline
+* Docker-based containerized application deployment
+* AWS EC2 infrastructure hosting the application
+* Artifact storage and build log backup using AWS S3
 * Automated container lifecycle management and cleanup
-* Secure deployment using IAM roles and security groups
+* Secure infrastructure using IAM roles and AWS security groups
+* Production-ready DevOps automation workflow
 
 ---
 
 ## 🏗 System Architecture
 
-Pipeline Workflow:
+Pipeline Flow:
 
-GitHub → Jenkins Pipeline → Docker Image Build → AWS EC2 Deployment → Artifact Storage in AWS S3
+GitHub Repository
+→ Jenkins CI/CD Pipeline
+→ Docker Image Build
+→ AWS EC2 Container Deployment
+→ Artifact & Log Storage in AWS S3
 
 ---
 
 ## 🛠 Technologies Used
 
-* **Frontend:** HTML5, CSS3, JavaScript
-* **Version Control:** Git, GitHub
-* **CI/CD Automation:** Jenkins
+* **Frontend:** HTML, CSS, JavaScript
+* **Version Control:** Git & GitHub
+* **CI/CD Tool:** Jenkins
 * **Containerization:** Docker
-* **Cloud Infrastructure:** AWS EC2, AWS S3, IAM
+* **Cloud Platform:** AWS EC2, AWS S3, IAM
 * **Web Server:** Nginx (Docker container)
 
 ---
@@ -44,7 +48,7 @@ GitHub → Jenkins Pipeline → Docker Image Build → AWS EC2 Deployment → Ar
 ## 📁 Repository Structure
 
 ```
-gemini-bot-clone/
+aws-gemini-bot-cicd-pipeline/
 │── index.html
 │── style.css
 │── script.js
@@ -58,67 +62,69 @@ gemini-bot-clone/
 
 ---
 
-## ⚙️ Deployment Process
+## ⚙️ Automated Deployment Workflow
 
-1. Developer pushes code to GitHub.
-2. GitHub webhook triggers Jenkins pipeline.
-3. Jenkins builds Docker image.
-4. Docker container deployed automatically to AWS EC2.
-5. Build artifacts and logs uploaded to AWS S3.
-6. Old containers and images are cleaned automatically.
+1. Developer pushes code to GitHub repository.
+2. GitHub webhook triggers Jenkins pipeline automatically.
+3. Jenkins builds Docker image and deploys container to AWS EC2.
+4. Build artifacts and logs are uploaded to AWS S3.
+5. Old containers and images are automatically cleaned.
 
-Average deployment time: **2–3 minutes**
+Average deployment time: **~2–3 minutes**
 
 ---
 
 ## 📦 Run Locally
 
 ```bash
-git clone https://github.com/yourusername/gemini-bot-clone.git
-cd gemini-bot-clone
+git clone https://github.com/Thirumalaivasangj3/aws-gemini-bot-cicd-pipeline.git
+cd aws-gemini-bot-cicd-pipeline
 docker build -t gemini-bot .
 docker run -p 8081:80 gemini-bot
 ```
 
-Open:
+Open in browser:
+
+```
 http://localhost:8081
+```
 
 ---
 
 ## 🔐 Security Measures
 
-* IAM role-based secure access to AWS resources
-* Encrypted S3 artifact storage
-* Controlled EC2 security group access
-* Jenkins credential vault for secrets management
+* IAM role-based secure AWS access
+* Encrypted AWS S3 artifact storage
+* Jenkins credentials stored securely in credential vault
+* Restricted EC2 access using security groups
 
 ---
 
 ## 📈 Project Outcomes
 
-* Deployment time reduced from 30–45 minutes to ~2 minutes
-* Automated error-free deployments
-* Improved scalability and reliability
-* Demonstrates real-world enterprise DevOps pipeline practices
+* Reduced deployment time from 30–45 minutes to ~2 minutes
+* Eliminated manual deployment steps
+* Improved scalability, automation, and deployment reliability
+* Demonstrates enterprise-level DevOps CI/CD implementation
 
 ---
 
 ## 🔮 Future Enhancements
 
-* Multi-environment deployments (Dev / Staging / Production)
-* Kubernetes (EKS) based container orchestration
-* Monitoring using Prometheus and Grafana
+* Multi-environment deployment (Dev / Staging / Production)
+* Kubernetes (AWS EKS) integration
+* Monitoring with Prometheus and Grafana
 * Infrastructure provisioning using Terraform
-* Automated security and vulnerability scanning
+* Automated security vulnerability scanning
 
 ---
 
 ## 👨‍💻 Authors
 
 * Thirumalaivasan GJ
-  
+
 ---
 
 ## 📜 License
 
-This project is released under the MIT License.
+MIT License
