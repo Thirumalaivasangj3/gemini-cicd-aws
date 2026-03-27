@@ -1,4 +1,4 @@
-# 🚀 Gemini CI/CD AWS Pipeline
+# Gemini CI/CD AWS Pipeline
 
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
@@ -10,27 +10,27 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates a **secure, scalable, and fully automated CI/CD pipeline** for a Gemini Bot Clone web application. The pipeline integrates **GitHub, Jenkins, Docker, and AWS** to automate the entire deployment lifecycle, enabling fast, reliable, and production-ready deployments with minimal manual intervention.
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
-| | Feature |
-|---|---|
-| 🔗 | GitHub webhook-triggered Jenkins CI/CD pipeline |
-| 🐳 | Docker containerized application deployment |
-| ☁️ | AWS EC2 hosting for production deployment |
-| 🗄️ | Artifact and build log storage using AWS S3 |
-| ♻️ | Automated container lifecycle management and cleanup |
-| 🔐 | Secure infrastructure using IAM roles and security groups |
-| ✅ | Production-ready DevOps workflow |
+| Feature |
+|---|
+| GitHub webhook-triggered Jenkins CI/CD pipeline |
+| Docker containerized application deployment |
+| AWS EC2 hosting for production deployment |
+| Artifact and build log storage using AWS S3 |
+| Automated container lifecycle management and cleanup |
+| Secure infrastructure using IAM roles and security groups |
+| Production-ready DevOps workflow |
 
 ---
 
-## 🏗 System Architecture
+## System Architecture
 
 ```
 GitHub Repository
@@ -46,7 +46,7 @@ Artifact Storage in AWS S3
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 | Category | Technology |
 |---|---|
@@ -59,7 +59,7 @@ Artifact Storage in AWS S3
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 gemini-cicd-aws/
@@ -76,21 +76,21 @@ gemini-cicd-aws/
 
 ---
 
-## ⚙️ Automated Deployment Workflow
+## Automated Deployment Workflow
 
 | Step | Action |
 |---|---|
-| 1️⃣ | Developer pushes code to GitHub |
-| 2️⃣ | GitHub webhook automatically triggers Jenkins pipeline |
-| 3️⃣ | Jenkins builds Docker image and deploys container to AWS EC2 |
-| 4️⃣ | Build artifacts and logs are uploaded to AWS S3 |
-| 5️⃣ | Old containers and images are automatically cleaned |
+| 1 | Developer pushes code to GitHub |
+| 2 | GitHub webhook automatically triggers Jenkins pipeline |
+| 3 | Jenkins builds Docker image and deploys container to AWS EC2 |
+| 4 | Build artifacts and logs are uploaded to AWS S3 |
+| 5 | Old containers and images are automatically cleaned |
 
-> ⏱️ Average deployment time: **~2–3 minutes**
+> Average deployment time: **~2–3 minutes**
 
 ---
 
-## 📦 Run Locally
+## Run Locally
 
 ```bash
 git clone https://github.com/Thirumalaivasangj3/gemini-cicd-aws.git
@@ -106,7 +106,7 @@ http://localhost:8081
 
 ---
 
-## 🔐 Security Measures
+## Security Measures
 
 - IAM role-based secure AWS access
 - Encrypted S3 artifact storage
@@ -115,23 +115,23 @@ http://localhost:8081
 
 ---
 
-## 📈 Project Outcomes
+## Project Outcomes
 
 | Metric | Result |
 |---|---|
-| ⏱️ Deployment Time | Reduced from 30–45 mins → **~2 minutes** |
-| 🙌 Manual Steps | Eliminated |
-| 📦 Scalability | Improved deployment reliability |
-| 🏢 Standard | Enterprise-level DevOps automation |
+| Deployment Time | Reduced from 30–45 mins to **~2 minutes** |
+| Manual Steps | Eliminated |
+| Scalability | Improved deployment reliability |
+| Standard | Enterprise-level DevOps automation |
 
 ---
 
-## 👨‍💻 Authors
+## Authors
 
 **Thirumalaivasan GJ**
 
 ---
 
-## 📜 License
+## License
 
 MIT License
